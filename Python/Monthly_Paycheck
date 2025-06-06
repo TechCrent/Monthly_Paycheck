@@ -18,31 +18,31 @@
 #Variables
 FirstBonus = 10
 SecondBonus = 20
-MonthlyBonus = 0
 
 #Interface and Input
-Salary = input ("Enter Your Salary: ")
-NumOfYears = input("How Many Years Have You Been Working?: ")
-TotalSales = input("Enter Your Total Sales For The Month: ")
+Salary = float(input ("Enter Your Salary: "))
+NumOfYears = int(input("How Many Years Have You Been Working?: "))
+TotalSales = float(input("Enter Your Total Sales For The Month: "))
 
 #Calc for Monthly Bonus
-if int(NumOfYears) <= 5:
-    float(MonthlyBonus) = FirstBonus * int(NumOfYears)
+if NumOfYears <= 5:
+    MonthlyBonus = FirstBonus * NumOfYears
 else:
-    float(MonthlyBonus) = SecondBonus * int(NumOfYears)
+    MonthlyBonus = SecondBonus * NumOfYears
 
 #Calc for Additional Bonus
-if float(TotalSales) >= 5000 and float(TotalSales) < 10000:
-    AdditionalBonus = 0.03 * float(TotalSales)
-elif float(TotalSales) >= 10000:
-    AdditionalBonus = 0.06 * float(TotalSales)
+if TotalSales >= 5000 and TotalSales < 10000:
+    AdditionalBonus = 0.03 * TotalSales
+elif TotalSales >= 10000:
+    AdditionalBonus = 0.06 * TotalSales
 else:
     AdditionalBonus = 0
 
+#Calc for Total Bonus and Paycheck
 TotalBonus = MonthlyBonus + AdditionalBonus
+TotalPaycheck = Salary + TotalBonus
 
 #Calc for Total Paycheck
-TotalPaycheck = float(Salary) + TotalBonus
 print("Good Work This Month!")
 print("Your Monthly Bonus is: $", MonthlyBonus)
 print("Your Additional Bonus is: $", AdditionalBonus)
