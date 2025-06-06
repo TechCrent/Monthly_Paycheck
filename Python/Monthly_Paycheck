@@ -15,14 +15,7 @@
 #month are at least $10, 000, he or she receives a 6% commission
 #on the sale.
 
-#Monthly paycheck
-#Base salary
-#First bonus
-#Second bonus
-#Montly bonus
-#Additional bonus
-#Total bonus
-
+#Variables
 FirstBonus = 10
 SecondBonus = 20
 MonthlyBonus = 0
