@@ -73,7 +73,9 @@ int main() {
     std::cout << "Your additional bonus for this month is: $" << addSalary << std::endl;
     //Actual Check
     std::cout << "Your Paycheck is: $" << newSalary << std::endl;
+    std::cout << "Thank You For Working With Us!" << std::endl;
 
 
     return 0;
+    //End of the Program
 }

@@ -1,7 +1,6 @@
-
 #Challenge 1.0
 
-#write a c++ program that calculates the monthly paycheck of a
+#write a python program that calculates the monthly paycheck of a
 #salesperson at a local department store. Every salesperson has
 #a base salary. The salesperson also receives a bonus at the end
 #of each month, based on the following criteria: if the
@@ -15,3 +14,52 @@
 #on the sale. If the total sales made by the salesperson for the
 #month are at least $10, 000, he or she receives a 6% commission
 #on the sale.
+
+#Monthly paycheck
+#Base salary
+#First bonus
+#Second bonus
+#Montly bonus
+#Additional bonus
+#Total bonus
+
+FirstBonus = 10
+SecondBonus = 20
+MonthlyBonus = 0
+
+#Interface and Input
+Salary = input ("Enter Your Salary: ")
+NumOfYears = input("How Many Years Have You Been Working?: ")
+TotalSales = input("Enter Your Total Sales For The Month: ")
+
+#Calc for Monthly Bonus
+if int(NumOfYears) <= 5:
+    float(MonthlyBonus) = FirstBonus * int(NumOfYears)
+else:
+    float(MonthlyBonus) = SecondBonus * int(NumOfYears)
+
+#Calc for Additional Bonus
+if float(TotalSales) >= 5000 and float(TotalSales) < 10000:
+    AdditionalBonus = 0.03 * float(TotalSales)
+elif float(TotalSales) >= 10000:
+    AdditionalBonus = 0.06 * float(TotalSales)
+else:
+    AdditionalBonus = 0
+
+TotalBonus = MonthlyBonus + AdditionalBonus
+
+#Calc for Total Paycheck
+TotalPaycheck = float(Salary) + TotalBonus
+print("Good Work This Month!")
+print("Your Monthly Bonus is: $", MonthlyBonus)
+print("Your Additional Bonus is: $", AdditionalBonus)
+print("Your Total Bonus is: $", TotalBonus)
+print("Your Total Paycheck is: $", TotalPaycheck)
+print("Thank You For Working With Us!")
+#End of Program
+
+
+
+
+
+
