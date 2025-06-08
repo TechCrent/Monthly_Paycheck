@@ -16,38 +16,38 @@
 #on the sale.
 
 #Variables
-FirstBonus = 10
-SecondBonus = 20
+first_bonus = 10
+second_bonus = 20
 
 #Interface and Input
-Salary = float(input ("Enter Your Salary: "))
-NumOfYears = int(input("How Many Years Have You Been Working?: "))
-TotalSales = float(input("Enter Your Total Sales For The Month: "))
+salary = float(input ("Enter Your Salary: "))
+num_of_years = int(input("How Many Years Have You Been Working?: "))
+total_sales = float(input("Enter Your Total Sales For The Month: "))
 
 #Calc for Monthly Bonus
-if NumOfYears <= 5:
-    MonthlyBonus = FirstBonus * NumOfYears
+if num_of_years <= 5:
+    monthly_bonus = first_bonus * num_of_years
 else:
-    MonthlyBonus = SecondBonus * NumOfYears
+    monthly_bonus = second_bonus * num_of_years
 
 #Calc for Additional Bonus
-if TotalSales >= 5000 and TotalSales < 10000:
-    AdditionalBonus = 0.03 * TotalSales
-elif TotalSales >= 10000:
-    AdditionalBonus = 0.06 * TotalSales
+if 5000 <= total_sales < 10000:
+    additional_bonus = 0.03 * total_sales
+elif total_sales >= 10000:
+    additional_bonus = 0.06 * total_sales
 else:
-    AdditionalBonus = 0
+    additional_bonus = 0
 
 #Calc for Total Bonus and Paycheck
-TotalBonus = MonthlyBonus + AdditionalBonus
-TotalPaycheck = Salary + TotalBonus
+total_bonus = monthly_bonus + additional_bonus
+total_paycheck = salary + total_bonus
 
 #Calc for Total Paycheck
 print("Good Work This Month!")
-print("Your Monthly Bonus is: $", MonthlyBonus)
-print("Your Additional Bonus is: $", AdditionalBonus)
-print("Your Total Bonus is: $", TotalBonus)
-print("Your Total Paycheck is: $", TotalPaycheck)
+print(f"Your Monthly Bonus is: ${monthly_bonus:.2f}")
+print(f"Your Additional Bonus is: ${additional_bonus:.2f}")
+print(f"Your Total Bonus is: ${total_bonus:.2f}")
+print(f"Your Total Paycheck is: ${total_paycheck:.2f}")
 print("Thank You For Working With Us!")
 #End of Program.
 
