@@ -18,8 +18,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f993430c-a158-426f-8f81-d80a7c277d31" name="Changes" comment="Setting things right for Monthly_Paycheck project">
+      <change afterPath="$PROJECT_DIR$/Python/Monthly_Paycheck_App.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Challenge 1.0 (Monthly_Paycheck).iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Challenge 1.0 (Monthly_Paycheck).iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python/Monthly_Paycheck.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/Monthly_Paycheck.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +59,7 @@
     "C/C++ File.Monthy_Paycheck.cpp.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.Monthly_Paycheck.executor": "Run",
+    "Python.Monthly_Paycheck_App.executor": "Run",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -71,6 +74,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -113,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749248498535</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Setting things right for Monthly_Paycheck project">
+      <option name="closed" value="true" />
+      <created>1749342212747</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749342212747</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
