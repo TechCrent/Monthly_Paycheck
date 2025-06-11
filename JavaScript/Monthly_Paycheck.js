@@ -26,4 +26,9 @@ on the sale.
 // if total sales >= $5,000 but < $10,000, 3% commission
 // if total sales >= $10,000, 6% commission
 
+//Bonus Variables
+let firstBonus = 10;
+let secondBonus = 20;
 
+//Interface
+let baseSalary;
